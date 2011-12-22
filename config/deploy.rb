@@ -2,8 +2,8 @@
 set :application, "myapp"
 set :deploy_to, "/Users/rails/myapp"
 
-#set :repository,  "git@github.com:a1128ys/myapp"
-set :repository, :origin
+set :repository,  "git@github.com:a1128ys/myapp"
+#set :repository, :origin
 
 default_run_options[:pty] = true
 set :scm, :git
