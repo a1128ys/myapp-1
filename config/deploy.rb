@@ -1,9 +1,15 @@
 # config/deploy.rb
 set :application, "myapp"
-set :deploy_to, "/home/rails/myapp"
+set :deploy_to, "/Users/rails/myapp"
 
-set :repository,  "git@github.com:a1114tk/myapp"
+#set :repository,  "git@github.com:a1128ys/myapp"
+set :repository, "origin"
+
+default_run_options[:pty] = true
 set :scm, :git
+set :git, "/usr/local/git/bin/git"
+set :git_account, "a1128ys"
+set :scm_passphrase, "4jST?zI0"
 
 set :use_sudo, false
 
